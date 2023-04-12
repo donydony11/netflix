@@ -1,8 +1,7 @@
 import  prismadb from '@/lib/prismadb';
 import { NextApiRequest, NextApiResponse } from "next"
-
 import serverAuth from '@/lib/serverAuth';
-import MovieCard from '@/components/MovieCard';
+
 
 export default async function(req: NextApiRequest, res: NextApiResponse){
     if(req.method != "GET"){
